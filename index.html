@@ -1,57 +1,83 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<title>reveal.js</title>
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+	
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+	
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	
+	<style>
+		.reveal .slide-number {
+			font-size: 20px;
+			background-color: transparent;
+		}
+		
+		.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+			text-transform: none;
+		}
+	</style>
+	
+	<style>
+		.two-img {
+			position: relative;
+			display: flex;
+			flex-flow: row;
+		}
+		.two-img div {
+			flex-basis: 1px;
+			flex-grow: 1;
+			box-sizing: border-box;
+			display: inline-block;
+		}
+		
+		.two-img img {
+			width: 100%;
+			box-sizing: border-box;
+			display: inline-block;
+		}
 
-		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<style>
-			.reveal .slide-number {
-				font-size: 20px;
-				background-color: transparent;
-			}
-
-			.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-				text-transform: none;
-			}
-		</style>
-	</head>
-	<body>
-		<div style="position: fixed; height: 7%; bottom: 0; left: 0; right: 0; background-color: rgb(61,152,222);">
-			<img src='./img/logo.svg' style='height: 100%; padding: 0.3%; box-sizing: border-box;'/>
-		</div>
-
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h4>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</h4>
-					<p>
-						Jorn Hoofwijk<br/>
-						<small>4396499</small>
-					</p>
-					<div>
-						<small style='text-align: left; margin-right: 30%'>
-							<em>Supervisors</em><br/>
-							Dr. Anton Akhmerov<br/>
-							Dr. ir. Dennis den Ouden-van der Horst
-							<!-- 
+		.reveal section img {
+			border: 0px;
+			box-shadow: none;
+		}
+	</style>
+</head>
+<body>
+	<div style="position: fixed; height: 7%; bottom: 0; left: 0; right: 0; background-color: rgb(61,152,222);">
+		<img src='./img/logo.svg' style='height: 100%; padding: 0.3%; box-sizing: border-box;'/>
+	</div>
+	
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h4>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</h4>
+				<p>
+					Jorn Hoofwijk<br/>
+					<small>4396499</small>
+				</p>
+				<div>
+					<small style='text-align: left; margin-right: 30%'>
+						<em>Supervisors</em><br/>
+						Dr. Anton Akhmerov<br/>
+						Dr. ir. Dennis den Ouden-van der Horst
+						<!-- 
 							<br/><br/>
 							<em>Thanks to</em><br/>
 							Joe Weston<br/>
@@ -65,53 +91,82 @@
 					</div>
 				</section>
 				<section>
+					<style>
+						.highlight-title {
+							color: rgba(0,0,0,0.5);
+						}
+						
+						.highlight-title b {
+							/* font-weight: 900; */
+							font-style: italic;
+							color:black;
+						}
+						
+					</style>
 					<h2>Outline</h2>
-					<ul>
-						<li class='fragment'>test</li>
-						<li class='fragment'>test</li>
-						<li class='fragment'>test</li>
+					<ul class='highlight-title'>
+						<li class='fragment'>A multi-dimensional <b>adaptive sampling algorithm</b> and its application to Fermi surfaces</li>
+						<li class='fragment'>A <b>multi-dimensional adaptive sampling algorithm</b> and its application to Fermi surfaces</li>
+						<li class='fragment'><b>Prioritising curvature</b></li>
+						<li class='fragment'>A multi-dimensional adaptive sampling algorithm and its application to <b>Fermi surfaces</b></li>
 					</ul>
 				</section>
+				
+				<section>
+					<h2>Problem</h2>
+					<img src="img/A_first_year_resonance/original.svg" />
+				</section>
 
-				<section>Slide 3</section>
+				<section>
+					<h2>Solution: Adaptive sampling</h2>
+					<p>100 points</p>
+					<div class='two-img'>
+						<div>
+							<img src='img/A_first_year_resonance/homo_100.svg'/>
+							Homogeneous
+						</div>
+						<div>
+							<img src='img/A_first_year_resonance/adaptive_100.svg'/>
+							Adaptive
+						</div>
+					</div>
+				</section>
+				
+				
 				<section>Slide 4</section>
-
+				
 				<section>
 					Slide 5
 					<p class="fragment">grow</p>
 					<p class="fragment">grow</p>
 					<p class="fragment">grow</p>
 				</section>
-
+				
 				<section>Slide 6</section>
 				<section>Slide 7</section>
 			</div>
 		</div>
-
+		
 		<script src="js/reveal.js"></script>
-
+		
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true },
+				{ src: 'plugin/jump/jump.js', async: true },
 				],
 				slideNumber: true,
 				slideNumber: 'c/t',
 				controls: false,
 				hash: true,
 			});
-
-
-			// Reveal.configure({ 
-			// 	showSlideNumber: 'all',
-			// 	slideNumber: 'c/t', 
-			// });
 		</script>
 	</body>
-</html>
+	</html>
+	
