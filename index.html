@@ -58,6 +58,19 @@
 			box-shadow: none;
 		}
 	</style>
+	
+	<style>
+		.highlight-title {
+			color: rgba(0,0,0,0.5);
+		}
+		
+		.highlight-title b {
+			/* font-weight: 900; */
+			font-style: italic;
+			color:black;
+		}
+		
+	</style>
 </head>
 <body>
 	<div style="position: fixed; height: 7%; bottom: 0; left: 0; right: 0; background-color: rgb(61,152,222);">
@@ -91,18 +104,6 @@
 					</div>
 				</section>
 				<section>
-					<style>
-						.highlight-title {
-							color: rgba(0,0,0,0.5);
-						}
-						
-						.highlight-title b {
-							/* font-weight: 900; */
-							font-style: italic;
-							color:black;
-						}
-						
-					</style>
 					<h2>Outline</h2>
 					<ul class='highlight-title'>
 						<li class='fragment'>A multi-dimensional <b>adaptive sampling algorithm</b> and its application to Fermi surfaces</li>
@@ -132,6 +133,8 @@
 					</div>
 				</section>
 				
+				
+				
 				<section>
 					<h2>Adaptive</h2>
 					<div style="position:relative; width:640px; height:480px; margin:0 auto;">
@@ -150,51 +153,194 @@
 						<img class="fragment" width="640" height="480" src="img/B_Adaptive_iteration/img_13.svg" style="position:absolute;top:0;left:0;" />
 					</div>
 				</section>
-
+				
 				<section>
+					<h2>Adaptive</h2>
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/B_Adaptive_iteration/img_homogeneous.svg'/>
+							Homogeneous
+						</div>
+						<div class=''>
+							<img src='img/B_Adaptive_iteration/img_adaptive.svg'/>
+							Adaptive
+						</div>
+					</div>
+				</section>
+				
+				<!-- <section>
 					<h2>Adaptive</h2>
 					<script type="math/tex; mode=display">
 						L_i = \sqrt{\left(\frac{\Delta x}{x_{\text{max}} - x_{\text{min}}}\right)^2  + \left(\frac{\Delta y}{y_{\text{max}} - y_{\text{min}}}\right)^2}
 					</script>
-				</section>
-				
-				
-				
-				<section>Slide 4</section>
+				</section> -->
 				
 				<section>
-					Slide 5
-					<p class="fragment">grow</p>
-					<p class="fragment">grow</p>
-					<p class="fragment">grow</p>
+					<h2>Outline</h2>
+					<ul class='highlight-title'>
+						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+						<li class=''>A <b>multi-dimensional adaptive sampling algorithm</b> and its application to Fermi surfaces</li>
+						<li class=''>Prioritising curvature</li>
+						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+					</ul>
 				</section>
 				
-				<section>Slide 6</section>
-				<section>Slide 7</section>
+				<section>
+					<h2>Adaptive 2d</h2>
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/C_adaptive_2d/homogeneous.png'/>
+							Homogeneous
+						</div>
+						<div class=''>
+							<img src='img/C_adaptive_2d/learner2d.png'/>
+							Adaptive
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Adaptive 2d</h2>
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/C_adaptive_2d/ring_homogeneous.png'/>
+							Homogeneous
+						</div>
+						<div class=''>
+							<img src='img/C_adaptive_2d/ring_adaptive.png'/>
+							Adaptive
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<h2>Adaptive 2d</h2>
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/C_adaptive_2d/2_homogeneous.png'/>
+							Homogeneous
+						</div>
+						<div class=''>
+							<img src='img/C_adaptive_2d/2_learner2d.png'/>
+							Adaptive
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Loss in 2D</h2>
+					<img src='img/C_adaptive_2d/iso_homogeneous.png' width="50%"/>
+				</section>
+				
+				
+				
+				<section>
+					<h2>Problems with length as loss</h2>
+					<div style='display: flex;'>
+						<div>
+							<ul>
+								<li>Small bumps</li>
+								<li>Noise</li>
+								<li>Skipping peaks</li>
+								<!-- <li>sin(1/x)</li> -->
+							</ul>
+						</div>
+						
+						<div style="position:relative; width:640px; height:480px; margin:0 auto;">
+							<img class="fragment" width="640" height="480" src="img/D_problems_distance/bump_adaptive_32.svg"  style="position:absolute;top:0;left:0;" />
+							<img class="fragment" width="640" height="480" src="img/D_problems_distance/sin_adaptive_200.svg"  style="position:absolute;top:0;left:0;" />
+							<img class="fragment" width="640" height="480" src="img/D_problems_distance/noise_original.svg"  style="position:absolute;top:0;left:0;" />
+							<img class="fragment" width="640" height="480" src="img/D_problems_distance/noise_adaptive_100.svg"  style="position:absolute;top:0;left:0;" />
+							<!-- <img class="fragment" width="640" height="480" src="img/D_problems_distance/sin_over_xadaptive_250.svg"  style="position:absolute;top:0;left:0;" /> -->
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Outline</h2>
+					<ul class='highlight-title'>
+						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+						<li class=''><b>Prioritising curvature</b></li>
+						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Line simplification</h2>
+					Visvalingam-Whyatt algorithm
+					
+					<div style="position:relative; width:730px; height:280px; margin:0 auto;">
+						<img class="        " width="730" height="280" src="img/E_visvalingam_whyat/img_1.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_2.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_3.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_4.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_5.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_6.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_2.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+					</div>
+					
+				</section>
+				
+				
+				<section>
+					<h2>Loss function</h2>
+					"reversed Visvalingam-Whyatt algorithm"
+					
+					<img height='300' src="img/F_curvature_loss/triangle_loss.png"/>
+					
+					<div class="fragment">
+						<script type="math/tex; mode=display">
+							A_{\text{left}} + A_{\text{right}} \approx (a^2b+ab^2+b^2c+bc^2)\cdot|f''|
+						</script>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Exploration</h2>
+					<div style='display: flex'>
+						<div>
+							
+							<script type="math/tex; mode=display">
+								L_i = \Delta x ^ 3 \cdot |f''|
+							</script>
+							
+							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.0.svg"/>
+						</div>
+						<div class='fragment'>
+							<script type="math/tex; mode=display">
+								L_i = \Delta x ^ 3 \cdot \left(|f''| + \beta\right)
+							</script>
+							
+							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.05.svg"/>
+						</div>
+					</div>
+				</section>
+				
 			</div>
-		</div>
+			
+			<script src="js/reveal.js"></script>
+			
+			<script>
+				// More info about config & dependencies:
+				// - https://github.com/hakimel/reveal.js#configuration
+				// - https://github.com/hakimel/reveal.js#dependencies
+				Reveal.initialize({
+					dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/jump/jump.js', async: true },
+					{ src: '../../plugin/math/math.js', async: true },
+					],
+					slideNumber: true,
+					slideNumber: 'c/t',
+					controls: false,
+					hash: true,
+				});
+			</script>
+		</body>
+		</html>
 		
-		<script src="js/reveal.js"></script>
-		
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true },
-				{ src: 'plugin/jump/jump.js', async: true },
-				{ src: '../../plugin/math/math.js', async: true },
-				],
-				slideNumber: true,
-				slideNumber: 'c/t',
-				controls: false,
-				hash: true,
-			});
-		</script>
-	</body>
-	</html>
-	

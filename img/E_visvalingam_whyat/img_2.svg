@@ -1,43 +1,43 @@
-<svg width="730" version="1.1" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="730" version="1.1" height="280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g transform="translate(5,5)">
     <path
       class="triangle"
-      d="M432,45L576,32.5L720,0Z"
+      d="M432,180L576,130L720,0Z"
       style="fill: rgb(148, 103, 189); fill-opacity: .2; stroke-dasharray: 4,4; stroke: #000;"
     ></path>
     <path
       class="triangle"
-      d="M288,25L432,45L576,32.5Z"
+      d="M288,100L432,180L576,130Z"
       style="fill: rgb(214, 39, 40); fill-opacity: .2; stroke-dasharray: 4,4; stroke: #000;"
     ></path>
     <path
       class="triangle"
-      d="M144,50L288,25L432,45Z"
+      d="M144,200L288,100L432,180Z"
       style="fill: rgb(44, 160, 44); fill-opacity: .2; stroke-dasharray: 4,4; stroke: #000;"
     ></path>
     <path
       class="triangle"
-      d="M0,5L144,50L288,25Z"
+      d="M0,5L144,200L288,100Z"
       style="fill: rgb(255, 127, 14); fill-opacity: .2; stroke-dasharray: 4,4; stroke: #000;"
     ></path>
-    <path class="line" d="M0,5L144,50L288,25L432,45L576,32.5L720,0" style="stroke: #000; fill: none; stroke-width: 1.5px"></path>
+    <path class="line" d="M0,5L144,200L288,100L432,180L576,130L720,0" style="stroke: #000; fill: none; stroke-width: 1.5px"></path>
     <g transform="translate(0,5)">
       <circle r="3.5" style="fill: rgb(31, 119, 180); stroke: #fff;"></circle>
       <text y="15" text-anchor="middle">1</text>
     </g>
-    <g transform="translate(144,50)">
+    <g transform="translate(144,200)">
       <circle r="3.5" style="fill: rgb(255, 127, 14); stroke: #fff;"></circle>
       <text y="15" text-anchor="middle">2</text>
     </g>
-    <g transform="translate(288,25)">
+    <g transform="translate(288,100)">
       <circle r="3.5" style="fill: rgb(44, 160, 44); stroke: #fff;"></circle>
       <text y="15" text-anchor="middle">3</text>
     </g>
-    <g transform="translate(432,45)">
+    <g transform="translate(432,180)">
       <circle r="3.5" style="fill: rgb(214, 39, 40); stroke: #fff;"></circle>
       <text y="15" text-anchor="middle">4</text>
     </g>
-    <g transform="translate(576,32.5)">
+    <g transform="translate(576,130)">
       <circle r="3.5" style="fill: rgb(148, 103, 189); stroke: #fff;"></circle>
       <text y="15" text-anchor="middle">5</text>
     </g>

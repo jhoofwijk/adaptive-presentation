@@ -1,16 +1,16 @@
-<svg width="730" version="1.1" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="730" version="1.1" height="280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g transform="translate(5,5)">
     <path
       class="triangle"
-      d="M0,5L144,50L720,0Z"
+      d="M0,5L144,200L720,0Z"
       style="fill: rgb(255, 127, 14);  fill-opacity: .2; stroke-dasharray: 4,4; stroke: #000;"
     ></path>
-    <path class="line" d="M0,5L144,50L720,0" style="stroke: #000; fill: none; stroke-width: 1.5px"></path>
+    <path class="line" d="M0,5L144,200L720,0" style="stroke: #000; fill: none; stroke-width: 1.5px"></path>
     <g transform="translate(0,5)">
       <circle r="3.5" style="fill: rgb(31, 119, 180); stroke: #fff"></circle>
       <text y="15" text-anchor="middle">1</text>
     </g>
-    <g transform="translate(144,50)">
+    <g transform="translate(144,200)">
       <circle r="3.5" style="fill: rgb(255, 127, 14); stroke: #fff"></circle>
       <text y="15" text-anchor="middle">2</text>
     </g>
