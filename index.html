@@ -233,7 +233,15 @@
 					<img src='img/C_adaptive_2d/iso_homogeneous.png' width="50%"/>
 				</section>
 				
-				
+				<section>
+						<h2>Outline</h2>
+						<ul class='highlight-title'>
+							<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+							<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+							<li class=''><b>Prioritising curvature</b></li>
+							<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+						</ul>
+					</section>
 				
 				<section>
 					<h2>Problems with length as loss</h2>
@@ -241,8 +249,8 @@
 						<div>
 							<ul>
 								<li>Small bumps</li>
-								<li>Noise</li>
 								<li>Skipping peaks</li>
+								<li>Noise*</li>
 								<!-- <li>sin(1/x)</li> -->
 							</ul>
 						</div>
@@ -257,15 +265,7 @@
 					</div>
 				</section>
 				
-				<section>
-					<h2>Outline</h2>
-					<ul class='highlight-title'>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
-						<li class=''><b>Prioritising curvature</b></li>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
-					</ul>
-				</section>
+				
 				
 				<section>
 					<h2>Line simplification</h2>
@@ -298,22 +298,105 @@
 				</section>
 				
 				<section>
-					<h2>Exploration</h2>
+					<h2>Exploration/Exploitation</h2>
 					<div style='display: flex'>
 						<div>
 							
 							<script type="math/tex; mode=display">
-								L_i = \Delta x ^ 3 \cdot |f''|
+								L_i \approx \Delta x ^ 3 \cdot |f''|
 							</script>
 							
 							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.0.svg"/>
 						</div>
 						<div class='fragment'>
 							<script type="math/tex; mode=display">
-								L_i = \Delta x ^ 3 \cdot \left(|f''| + \beta\right)
+								L_i \approx \Delta x ^ 3 \cdot \left(|f''| + \beta\right)
 							</script>
 							
 							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.05.svg"/>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Exploration/exploitation</h2>
+					<!-- <script type="math/tex; mode=display">
+						L_i = \Delta x ^ 3 \cdot \left(|f''| + \beta\right)
+					</script> -->
+					<div style="position:relative; width:500px; margin:0 auto;">
+						<div style='position:absolute;top:0; background-color: white;'>
+							<img src="img/G_exploration_vs_exploit/curv_beta_0.0.svg"/>
+							<script type="math/tex; mode=display">
+								\beta=0
+							</script>
+						</div>
+						<div class='fragment' style='position:absolute;top:0;left:0; background-color: white;'>
+							<img src="img/G_exploration_vs_exploit/curv_beta_10.svg"/>
+							<script type="math/tex; mode=display">
+								\beta=10
+							</script>
+						</div>
+						<div class='fragment' style='position:absolute;top:0;left:0; background-color: white;'>
+							<img src="img/G_exploration_vs_exploit/curv_beta_0.05.svg"/>
+							<script type="math/tex; mode=display">
+								\beta=0.05
+							</script>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<h2>Problems with length as loss</h2>
+					<div>
+						<ul>
+							<li>Small bumps</li>
+							<li>Skipping peaks</li>
+							<li>Noise</li>
+						</ul>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Improvement on: small bump</h2>
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/D_problems_distance/bump_adaptive_32.svg'/>
+							Length
+						</div>
+						<div class=''>
+							<img src='img/D_problems_distance/bump_curv_32.svg'/>
+							Curvature
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<h2>Improvement on: peaks</h2>
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/D_problems_distance/sin_adaptive_200.svg'/>
+							Length
+						</div>
+						<div class=''>
+							<img src='img/D_problems_distance/sin_curv_200.svg'/>
+							Curvature
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<h2>Improvement on: noise</h2>
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/D_problems_distance/noise_adaptive_100.svg'/>
+							Length
+						</div>
+						<div class=''>
+							<img src='img/D_problems_distance/noise_curv_100.svg'/>
+							Curvature
 						</div>
 					</div>
 				</section>
