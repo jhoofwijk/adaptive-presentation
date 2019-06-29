@@ -251,7 +251,7 @@
 								<li>Small bumps</li>
 								<li>Skipping peaks</li>
 								<li>Noise*</li>
-								<!-- <li>sin(1/x)</li> -->
+								<li>sin(1/x)</li>
 							</ul>
 						</div>
 						
@@ -260,7 +260,7 @@
 							<img class="fragment" width="640" height="480" src="img/D_problems_distance/sin_adaptive_200.svg"  style="position:absolute;top:0;left:0;" />
 							<img class="fragment" width="640" height="480" src="img/D_problems_distance/noise_original.svg"  style="position:absolute;top:0;left:0;" />
 							<img class="fragment" width="640" height="480" src="img/D_problems_distance/noise_adaptive_100.svg"  style="position:absolute;top:0;left:0;" />
-							<!-- <img class="fragment" width="640" height="480" src="img/D_problems_distance/sin_over_xadaptive_250.svg"  style="position:absolute;top:0;left:0;" /> -->
+							<img class="fragment" width="640" height="480" src="img/D_problems_distance/sin_over_xadaptive_250.svg"  style="position:absolute;top:0;left:0;" />
 						</div>
 					</div>
 				</section>
@@ -292,7 +292,24 @@
 					
 					<div class="fragment">
 						<script type="math/tex; mode=display">
-							A_{\text{left}} + A_{\text{right}} \approx (a^2b+ab^2+b^2c+bc^2)\cdot|f''|
+							L_i = A_{\text{left}} + A_{\text{right}} \approx (a^2b+ab^2+b^2c+bc^2)\cdot|f''|
+						</script>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Loss function in N dimensions</h2>
+					<div class="two-img" >
+						<img class="        " style='width: 25%' src="img/J_extension_to_3d/start.png"/>
+						<img class="fragment" style='width: 25%' src="img/J_extension_to_3d/red_triangle_1.png"/>
+						<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_2.png"/>
+						<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_3.png"/>
+					</div>
+					
+					
+					<div class="fragment">
+						<script type="math/tex; mode=display">
+							L_s = V_1 + V_2 + ... + V_{N+1}
 						</script>
 					</div>
 				</section>
@@ -315,6 +332,23 @@
 							
 							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.05.svg"/>
 						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Loss function in N dimensions</h2>
+					<div class="two-img" >
+						<img style='width: 25%' src="img/J_extension_to_3d/start.png"/>
+						<img style='width: 25%' src="img/J_extension_to_3d/red_triangle_1.png"/>
+						<img style='width: 25%'  src="img/J_extension_to_3d/red_triangle_2.png"/>
+						<img style='width: 25%'  src="img/J_extension_to_3d/red_triangle_3.png"/>
+					</div>
+					
+					
+					<div class="fragment">
+						<script type="math/tex; mode=display">
+							L_s = V_1 + V_2 + ... + V_{N+1} + \color{red}{ \beta\cdot V_s ^ {N+2}}
+						</script>
 					</div>
 				</section>
 				
@@ -402,6 +436,20 @@
 				</section>
 				
 				<section>
+					<h2>Improvement on: sin(1/x)</h2>
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/D_problems_distance/sin_over_xadaptive_250.svg'/>
+							Length
+						</div>
+						<div class=''>
+							<img src='img/D_problems_distance/sin_over_xcurv_250.svg'/>
+							Curvature
+						</div>
+					</div>
+				</section>
+				
+				<section>
 					<h2>How good is it?</h2>
 					<script type="math/tex; mode=display">
 						\text{Err} = \int_a^b|f(x)-\tilde f(x)|\ \text{d}x
@@ -437,7 +485,8 @@
 						<img height="450" src='img/H_interpolation_error/test.svg'/>
 					</div>
 				</section>
-				
+
+								
 			</div>
 			
 			<script src="js/reveal.js"></script>
