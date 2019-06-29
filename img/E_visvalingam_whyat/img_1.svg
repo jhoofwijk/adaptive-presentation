@@ -1,0 +1,29 @@
+<svg width="730" version="1.1" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(5,5)">
+    <path class="line" d="M0,5L144,50L288,25L432,45L576,32.5L720,0" style="stroke: #000; fill: none; stroke-width: 1.5px"></path>
+    <g transform="translate(5,5)">
+      <circle r="3.5" style="stroke: #fff; fill: rgb(31, 119, 180);"></circle>
+      <text y="15" text-anchor="middle">1</text>
+    </g>
+    <g transform="translate(144,50)">
+      <circle r="3.5" style="stroke: #fff; fill: rgb(255, 127, 14);"></circle>
+      <text y="15" text-anchor="middle">2</text>
+    </g>
+    <g transform="translate(288,25)">
+      <circle r="3.5" style="stroke: #fff; fill: rgb(44, 160, 44);"></circle>
+      <text y="15" text-anchor="middle">3</text>
+    </g>
+    <g transform="translate(432,45)">
+      <circle r="3.5" style="stroke: #fff; fill: rgb(214, 39, 40);"></circle>
+      <text y="15" text-anchor="middle">4</text>
+    </g>
+    <g transform="translate(576,32.5)">
+      <circle r="3.5" style="stroke: #fff; fill: rgb(148, 103, 189);"></circle>
+      <text y="15" text-anchor="middle">5</text>
+    </g>
+    <g transform="translate(720,0)">
+      <circle r="3.5" style="stroke: #fff; fill: rgb(140, 86, 75);"></circle>
+      <text y="15" text-anchor="middle">6</text>
+    </g>
+  </g>
+</svg>

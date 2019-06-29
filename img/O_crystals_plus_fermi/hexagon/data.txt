@@ -1,0 +1,6 @@
+tri adaptive: 12037
+homo: 5403
+homo 1st zone: 4049
+N = 15
+NN = 3375
+level = 6.5
