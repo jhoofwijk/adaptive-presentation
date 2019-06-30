@@ -80,6 +80,7 @@
 		
 		.fermi-img div img {
 			width: 100%;
+			margin: 0 0;
 		}
 		
 	</style>
@@ -98,12 +99,22 @@
 		.MathJax_Display {
 			margin: 0 !important;
 		}
+
+		.reveal .progress span {
+			background-color: lightblue;
+		}
+
+		
 		
 	</style>
 </head>
 <body>
-	<div style="position: fixed; height: 7%; bottom: 0; left: 0; right: 0; background-color: rgb(61,152,222);">
+	<div style="position: fixed; height: 7%; bottom: 0; left: 0; right: 0; background-color: rgb(61,152,222); color: white; font-size: 3vh">
 		<img src='./img/logo.svg' style='height: 100%; padding: 0.3%; box-sizing: border-box;'/>
+
+		<div style='bottom: 2vh; position: absolute;		width: 100%;		text-align: center;		font-family: "Source Sans Pro", Helvetica, sans-serif;'>
+			Jorn Hoofwijk - A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces
+		</div>
 	</div>
 	
 	<div class="reveal">
@@ -310,6 +321,8 @@
 						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_2.svg"  style="position:absolute;top:0;left:0;background-color: white" />
 					</div>
 					
+
+					<small style='position: absolute; bottom: 0; right 0; font-size: 0.2em;'>Images from M. Bostock <a href='https://bost.ocks.org/mike/simplify/'>https://bost.ocks.org/mike/simplify/</a></small>
 				</section>
 				
 				
@@ -376,7 +389,7 @@
 					
 					<div class="fragment">
 						<script type="math/tex; mode=display">
-							L_s = V_1 + V_2 + ... + V_{N+1} + \color{red}{ \beta\cdot V_s ^ {N+2}}
+							L_s = V_1 + V_2 + ... + V_{N+1} + \color{blue}{ \beta\cdot V_s ^ {N+2}}
 						</script>
 					</div>
 				</section>
@@ -608,31 +621,33 @@
 				
 				<section>
 					<h2>Fermi surface simple cubic</h2>
+					2.8x more triangles
 					<div class='fermi-img' style='text-align: center'>
 						<img height=220 src="img/O_crystals_plus_fermi/cubic.png"/>
 						<div>
 							<img src="img/O_crystals_plus_fermi/simple_cubic/iso_homogeneous.png"/><br/>
-							Homogeneous<br/>4081 triangles
+							Homogeneous
 						</div>
 						<div>
 							<img src="img/O_crystals_plus_fermi/simple_cubic/iso_adaptive.png"/><br/>
-							Adaptive<br/>11640 triangles
+							Adaptive
 						</div>
 						
 					</div>
 				</section>
-				
+
 				<section>
 					<h2>Fermi surface BCC</h2>
+					1.3x more triangles
 					<div class='fermi-img' style='text-align: center'>
 						<img height=220 src="img/O_crystals_plus_fermi/bcc.png"/>
 						<div>
 							<img src="img/O_crystals_plus_fermi/bcc/iso_homogeneous.png"/><br/>
-							Homogeneous<br/>4081 triangles
+							Homogeneous
 						</div>
 						<div>
 							<img src="img/O_crystals_plus_fermi/bcc/iso_adaptive.png"/><br/>
-							Adaptive<br/>11640 triangles
+							Adaptive
 						</div>
 						
 					</div>
@@ -640,35 +655,54 @@
 				
 				<section>
 					<h2>Fermi surface FCC</h2>
+					1.9x more triangles
 					<div class='fermi-img' style='text-align: center'>
 						<img height=220 src="img/O_crystals_plus_fermi/fcc.png"/>
 						<div>
 							<img src="img/O_crystals_plus_fermi/fcc/iso_homogeneous.png"/><br/>
-							Homogeneous<br/>4081 triangles
+							Homogeneous
 						</div>
 						<div>
 							<img src="img/O_crystals_plus_fermi/fcc/iso_adaptive.png"/><br/>
-							Adaptive<br/>11640 triangles
+							Adaptive
 						</div>
 						
 					</div>
 				</section>
 				
 				<section>
-					<h2>Fermi surface simple cubic</h2>
+					<h2>Fermi surface hexagonal</h2>
+					2.3x more triangles
 					<div class='fermi-img' style='text-align: center'>
 						<img height=220 src="img/O_crystals_plus_fermi/hex.png"/>
 						<div>
 							<img src="img/O_crystals_plus_fermi/hexagon/iso_homogeneous.png"/><br/>
-							Homogeneous<br/>4081 triangles
+							Homogeneous
 						</div>
 						<div>
 							<img src="img/O_crystals_plus_fermi/hexagon/iso_adaptive.png"/><br/>
-							Adaptive<br/>11640 triangles
+							Adaptive
 						</div>
 						
 					</div>
 				</section>
+
+				
+				<section>
+					<h2>Fermi surface simple cubic</h2>
+					<div class='fermi-img' style='text-align: center'>
+						<div>
+							<img src="img/O_crystals_plus_fermi/simple_cubic/mesh_homogeneous.png"/><br/>
+							Homogeneous
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/simple_cubic/mesh_adaptive.png"/><br/>
+							Adaptive
+						</div>
+						
+					</div>
+				</section>
+				
 				
 				
 				
