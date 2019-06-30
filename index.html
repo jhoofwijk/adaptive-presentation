@@ -99,11 +99,11 @@
 		.MathJax_Display {
 			margin: 0 !important;
 		}
-
+		
 		.reveal .progress span {
 			background-color: lightblue;
 		}
-
+		
 		
 		
 	</style>
@@ -111,7 +111,7 @@
 <body>
 	<div style="position: fixed; height: 7%; bottom: 0; left: 0; right: 0; background-color: rgb(61,152,222); color: white; font-size: 3vh">
 		<img src='./img/logo.svg' style='height: 100%; padding: 0.3%; box-sizing: border-box;'/>
-
+		
 		<div style='bottom: 2vh; position: absolute;		width: 100%;		text-align: center;		font-family: "Source Sans Pro", Helvetica, sans-serif;'>
 			Jorn Hoofwijk - A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces
 		</div>
@@ -226,7 +226,7 @@
 				</section>
 				
 				<section>
-					<h2>Adaptive 2d</h2>
+					<h2>Adaptive 2D</h2>
 					<div class='two-img'>
 						<div class=''>
 							<img src='img/C_adaptive_2d/homogeneous.png'/>
@@ -240,7 +240,7 @@
 				</section>
 				
 				<section>
-					<h2>Adaptive 2d</h2>
+					<h2>Adaptive 2D</h2>
 					<div class='two-img'>
 						<div class=''>
 							<img src='img/C_adaptive_2d/ring_homogeneous.png'/>
@@ -255,7 +255,7 @@
 				
 				
 				<section>
-					<h2>Adaptive 2d</h2>
+					<h2>Adaptive 2D</h2>
 					<div class='two-img'>
 						<div class=''>
 							<img src='img/C_adaptive_2d/2_homogeneous.png'/>
@@ -321,8 +321,8 @@
 						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_2.svg"  style="position:absolute;top:0;left:0;background-color: white" />
 					</div>
 					
-
-					<small style='position: absolute; bottom: 0; right 0; font-size: 0.2em;'>Images from M. Bostock <a href='https://bost.ocks.org/mike/simplify/'>https://bost.ocks.org/mike/simplify/</a></small>
+					
+					<small style='position: absolute; bottom: 0; right 0; font-size: 0.3em;'>Modified images from M. Bostock (<a href='https://bost.ocks.org/mike/simplify/'>https://bost.ocks.org/mike/simplify/</a>)</small>
 				</section>
 				
 				
@@ -523,8 +523,8 @@
 					<h2>How good is it?</h2>
 					Error reduced 20x
 					<div class='two-img'>
-						<img height="450" src='img/H_interpolation_error/original.svg'/>
-						<img height="450" src='img/H_interpolation_error/test.svg'/>
+						<img height="450" src='img/H_interpolation_error/peaks.svg'/>
+						<img height="450" src='img/H_interpolation_error/err_peaks.svg'/>
 					</div>
 				</section>
 				
@@ -635,7 +635,7 @@
 						
 					</div>
 				</section>
-
+				
 				<section>
 					<h2>Fermi surface BCC</h2>
 					1.3x more triangles
@@ -686,7 +686,7 @@
 						
 					</div>
 				</section>
-
+				
 				
 				<section>
 					<h2>Fermi surface simple cubic</h2>
@@ -705,6 +705,37 @@
 				
 				
 				
+				
+				<section>
+					<h2>Adaptive sampling</h2>
+					<ul>
+						<li>More accurate plots</li>
+						<li>Higher resolution Fermi surface</li>
+						<li>Other meshes</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Room for improvement</h2>
+					<ul>
+						<li>Faster implementation (C++ instead of Python)</li>
+						<li>Higher order interpolation</li>
+						<li>Anisotropic triangulations</li>
+					</ul>
+
+				</section>
+				
+				
+				<section>
+					<h2>Check out adaptive</h2>
+					<ul>
+						<li><a href='https://github.com/python-adaptive/adaptive'>github.com/python-adaptive/adaptive</a></li>
+						<li>Try on <a href='https://mybinder.org/v2/gh/python-adaptive/adaptive/master?filepath=learner.ipynb'>Binder</a> </li>
+						<li>conda install -c conda-forge adaptive</li>
+						<li>pip install adaptive[notebook]</li>
+					</ul>
+				</section>
 				
 				<section>
 					<h4>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</h4>
