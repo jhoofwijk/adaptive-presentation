@@ -57,6 +57,31 @@
 			border: 0px;
 			box-shadow: none;
 		}
+		
+		
+		.fermi-img {
+			position: relative;
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+		}
+		.fermi-img div {
+			flex-basis: 1px;
+			flex-grow: 1;
+			box-sizing: border-box;
+			display: inline-block;
+		}
+		
+		.fermi-img img {
+			width: initial;
+			box-sizing: border-box;
+			display: inline-block;
+		}
+		
+		.fermi-img div img {
+			width: 100%;
+		}
+		
 	</style>
 	
 	<style>
@@ -68,6 +93,10 @@
 			/* font-weight: 900; */
 			font-style: italic;
 			color:black;
+		}
+		
+		.MathJax_Display {
+			margin: 0 !important;
 		}
 		
 	</style>
@@ -515,9 +544,131 @@
 						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to <b>Fermi surfaces</b></li>
 					</ul>
 				</section>
-
-
 				
+				<section>
+					<h2>Band structure</h2>
+					1D crystal
+					<div class='two-img'>
+						<img src='img/K_band_structure/crystal-1d.svg'/>
+						<img class='fragment' src='img/K_band_structure/band_structure_1d.svg'/>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Fermi level</h2>
+					1D crystal
+					<div class='two-img'>
+						<div class=''>
+							<img src='img/K_band_structure/band_structure_1d_fermi_0.svg'/>
+							Conductor
+						</div>
+						<div class=''>
+							<img src='img/K_band_structure/band_structure_1d_fermi_high.svg'/>
+							Insulator
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Fermi surface</h2>
+					<img src="img/L_fermi_surface/fermi_gold.jpg"/><br/>
+					Fermi surface of gold
+				</section>
+				
+				
+				<section>
+					<h2>Modified adaptive sampling</h2>
+					<script type="math/tex; mode=display">
+						L_{\text{surf}} = 
+						\begin{cases}
+						1\cdot L_{\text{curv}} \quad\text{all points below or above Fermi level}\\
+						\gamma\cdot L_{\text{curv}} \quad\text{otherwise}; \gamma = 5
+						\end{cases}
+					</script>
+				</section>
+				
+				
+				<section>
+					<h2>Modified adaptive sampling</h2>
+					<div class='two-img' style='text-align: center'>
+						<div>
+							<img height='440' style='width: initial' src="img/N_zoom_to_isosurf/adaptive_5.png"/><br/>
+							<script type="math/tex; mode=display">
+								\gamma = 5
+							</script>
+						</div>
+						<div class='fragment'>
+							<img height='440' style='width: initial' src="img/N_zoom_to_isosurf/adaptive_25.png"/><br/>
+							<script type="math/tex; mode=display" style='margin-top: -50px'>
+								\gamma = 25
+							</script>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Fermi surface simple cubic</h2>
+					<div class='fermi-img' style='text-align: center'>
+						<img height=220 src="img/O_crystals_plus_fermi/cubic.png"/>
+						<div>
+							<img src="img/O_crystals_plus_fermi/simple_cubic/iso_homogeneous.png"/><br/>
+							Homogeneous<br/>4081 triangles
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/simple_cubic/iso_adaptive.png"/><br/>
+							Adaptive<br/>11640 triangles
+						</div>
+						
+					</div>
+				</section>
+				
+				<section>
+					<h2>Fermi surface BCC</h2>
+					<div class='fermi-img' style='text-align: center'>
+						<img height=220 src="img/O_crystals_plus_fermi/bcc.png"/>
+						<div>
+							<img src="img/O_crystals_plus_fermi/bcc/iso_homogeneous.png"/><br/>
+							Homogeneous<br/>4081 triangles
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/bcc/iso_adaptive.png"/><br/>
+							Adaptive<br/>11640 triangles
+						</div>
+						
+					</div>
+				</section>
+				
+				<section>
+					<h2>Fermi surface FCC</h2>
+					<div class='fermi-img' style='text-align: center'>
+						<img height=220 src="img/O_crystals_plus_fermi/fcc.png"/>
+						<div>
+							<img src="img/O_crystals_plus_fermi/fcc/iso_homogeneous.png"/><br/>
+							Homogeneous<br/>4081 triangles
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/fcc/iso_adaptive.png"/><br/>
+							Adaptive<br/>11640 triangles
+						</div>
+						
+					</div>
+				</section>
+				
+				<section>
+					<h2>Fermi surface simple cubic</h2>
+					<div class='fermi-img' style='text-align: center'>
+						<img height=220 src="img/O_crystals_plus_fermi/hex.png"/>
+						<div>
+							<img src="img/O_crystals_plus_fermi/hexagon/iso_homogeneous.png"/><br/>
+							Homogeneous<br/>4081 triangles
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/hexagon/iso_adaptive.png"/><br/>
+							Adaptive<br/>11640 triangles
+						</div>
+						
+					</div>
+				</section>
 				
 				
 				
