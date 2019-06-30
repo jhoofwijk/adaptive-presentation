@@ -145,11 +145,12 @@
 				</section>
 				<section>
 					<h2>Outline</h2>
-					<ul class='highlight-title'>
-						<li class='fragment'>A multi-dimensional <b>adaptive sampling algorithm</b> and its application to Fermi surfaces</li>
-						<li class='fragment'>A <b>multi-dimensional adaptive sampling algorithm</b> and its application to Fermi surfaces</li>
-						<li class='fragment'><b>Prioritising curvature</b></li>
-						<li class='fragment'>A multi-dimensional adaptive sampling algorithm and its application to <b>Fermi surfaces</b></li>
+					<h4>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</h4>
+					<ul class=''>
+						<li class='fragment'>Adaptive sampling algorithm</li>
+						<li class='fragment'>Multi-dimensional</li>
+						<li class='fragment'>Prioritising curvature</li>
+						<li class='fragment'>Band structures &amp; Fermi surfaces</li>
 					</ul>
 				</section>
 				
@@ -220,29 +221,29 @@
 				
 				<section>
 					<h2>Outline</h2>
-					<ul class='highlight-title'>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
-						<li class=''>A <b>multi-dimensional adaptive sampling algorithm</b> and its application to Fermi surfaces</li>
-						<li class=''>Prioritising curvature</li>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+					<div class='highlight-title'>A <b>multi-dimensional</b> adaptive sampling algorithm and its application to Fermi surfaces</div>
+					<br/>
+					<ul>
+						<li>Existing 2D implementation</li>
+						<li>New implementation</li>
 					</ul>
 				</section>
 				
 				<section>
 					<h2>Adaptive 2D</h2>
 					<div class='two-img'>
-						<div class=''>
+						<div class='' style='margin: 0 20px'>
 							<img src='img/C_adaptive_2d/homogeneous.png'/>
 							Homogeneous
 						</div>
-						<div class=''>
+						<div class='' style='margin: 0 20px'>
 							<img src='img/C_adaptive_2d/learner2d.png'/>
 							Adaptive
 						</div>
 					</div>
 				</section>
 				
-				<section>
+				<!-- <section>
 					<h2>Adaptive 2D</h2>
 					<div class='two-img'>
 						<div class=''>
@@ -254,17 +255,17 @@
 							Adaptive
 						</div>
 					</div>
-				</section>
+				</section> -->
 				
 				
 				<section>
 					<h2>Adaptive 2D</h2>
 					<div class='two-img'>
-						<div class=''>
+						<div class='' style='margin: 0 20px'>
 							<img src='img/C_adaptive_2d/2_homogeneous.png'/>
 							Homogeneous
 						</div>
-						<div class=''>
+						<div class='' style='margin: 0 20px'>
 							<img src='img/C_adaptive_2d/2_learner2d.png'/>
 							Adaptive
 						</div>
@@ -272,38 +273,56 @@
 				</section>
 				
 				<section>
-					<h2>Loss in 2D</h2>
+					<h2>Loss in N dimenions</h2>
 					<img src='img/C_adaptive_2d/iso_homogeneous.png' width="50%"/>
 				</section>
 				
 				<section>
+					<h2>Adaptive</h2>
+					<div class='two-img'>
+						<div class='' style='margin: 0 20px'>
+							<img src='img/C_adaptive_2d/learner2d.png'/>
+							Adaptive
+						</div>
+						<div class='' style='margin: 0 20px'>
+							<img src='img/C_adaptive_2d/learnernd_no_curv.png'/>
+							Area as loss
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
 					<h2>Outline</h2>
-					<ul class='highlight-title'>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
-						<li class=''><b>Prioritising curvature</b></li>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
+					<div class='highlight-title'>A multi-dimensional <b>adaptive sampling</b> algorithm and its application to Fermi surfaces</div>
+					<br/>
+					<ul>
+						<li>Problems with length as loss</li>
+						<li>New loss function</li>
+						<li>Problems solved?</li>
+						<li>Error comparison</li>
 					</ul>
 				</section>
+				
 				
 				<section>
 					<h2>Problems with length as loss</h2>
 					<div style='display: flex;'>
-						<div>
+						<div style='padding-top: 3em'>
 							<ul>
 								<li>Small bumps</li>
 								<li>Skipping peaks</li>
-								<li>Noise*</li>
-								<li>sin(1/x)</li>
+								<!-- <li>Noise*</li> -->
+								<!-- <li>sin(1/x)</li> -->
 							</ul>
 						</div>
 						
 						<div style="position:relative; width:640px; height:480px; margin:0 auto;">
 							<img class="fragment" width="640" height="480" src="img/D_problems_distance/bump_adaptive_32.svg"  style="position:absolute;top:0;left:0;" />
 							<img class="fragment" width="640" height="480" src="img/D_problems_distance/sin_adaptive_200.svg"  style="position:absolute;top:0;left:0;" />
-							<img class="fragment" width="640" height="480" src="img/D_problems_distance/noise_original.svg"  style="position:absolute;top:0;left:0;" />
-							<img class="fragment" width="640" height="480" src="img/D_problems_distance/noise_adaptive_100.svg"  style="position:absolute;top:0;left:0;" />
-							<img class="fragment" width="640" height="480" src="img/D_problems_distance/sin_over_xadaptive_250.svg"  style="position:absolute;top:0;left:0;" />
+							<!-- <img class="fragment" width="640" height="480" src="img/D_problems_distance/noise_original.svg"  style="position:absolute;top:0;left:0;" /> -->
+							<!-- <img class="fragment" width="640" height="480" src="img/D_problems_distance/noise_adaptive_100.svg"  style="position:absolute;top:0;left:0;" /> -->
+							<!-- <img class="fragment" width="640" height="480" src="img/D_problems_distance/sin_over_xadaptive_250.svg"  style="position:absolute;top:0;left:0;" /> -->
 						</div>
 					</div>
 				</section>
@@ -325,7 +344,7 @@
 					</div>
 					
 					
-					<small style='position: absolute; bottom: 0; right 0; font-size: 0.3em;'>Modified images from M. Bostock (<a href='https://bost.ocks.org/mike/simplify/'>https://bost.ocks.org/mike/simplify/</a>)</small>
+					<small style='position: absolute; bottom: 0; right: 0; font-size: 0.3em;'>Modified images from M. Bostock (<a href='https://bost.ocks.org/mike/simplify/'>https://bost.ocks.org/mike/simplify/</a>)</small>
 				</section>
 				
 				
@@ -337,8 +356,47 @@
 					
 					<div class="fragment">
 						<script type="math/tex; mode=display">
-							L_i = A_{\text{left}} + A_{\text{right}} \approx (a^2b+ab^2+b^2c+bc^2)\cdot|f''|
+							L_i = \frac12(A_{\text{left}} + A_{\text{right}}) = A_{\text{avg}}
 						</script>
+					</div>
+				</section>
+				<!-- 				
+					<section>
+						<h2>Loss function in N dimensions</h2>
+						<div class="two-img" >
+							<img class="        " style='width: 25%' src="img/J_extension_to_3d/start.png"/>
+							<img class="fragment" style='width: 25%' src="img/J_extension_to_3d/red_triangle_1.png"/>
+							<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_2.png"/>
+							<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_3.png"/>
+						</div>
+						
+						
+						<div class="fragment">
+							<script type="math/tex; mode=display">
+								L_s = \frac1N(V_1 + V_2 + ... + V_{N+1})
+							</script>
+						</div>
+					</section> 
+				-->
+				
+				<section>
+					<h2>Exploration/Exploitation</h2>
+					<div style='display: flex'>
+						<div>
+							
+							<script type="math/tex; mode=display">
+								L_i = A_{\text{avg}} 
+							</script>
+							
+							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.0.svg" height=""/>
+						</div>
+						<div class='fragment' style='margin-left: 100px'>
+							<script type="math/tex; mode=display">
+								L_i = A_{\text{avg}} + { \beta \cdot \Delta x^3}
+							</script>
+							
+							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.05.svg" height="" />
+						</div>
 					</div>
 				</section>
 				
@@ -351,48 +409,9 @@
 						<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_3.png"/>
 					</div>
 					
-					
 					<div class="fragment">
 						<script type="math/tex; mode=display">
-							L_s = V_1 + V_2 + ... + V_{N+1}
-						</script>
-					</div>
-				</section>
-				
-				<section>
-					<h2>Exploration/Exploitation</h2>
-					<div style='display: flex'>
-						<div>
-							
-							<script type="math/tex; mode=display">
-								L_i \approx \Delta x ^ 3 \cdot |f''|
-							</script>
-							
-							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.0.svg"/>
-						</div>
-						<div class='fragment'>
-							<script type="math/tex; mode=display">
-								L_i \approx \Delta x ^ 3 \cdot \left(|f''| + \beta\right)
-							</script>
-							
-							<img class='fragment' src="img/G_exploration_vs_exploit/curv_beta_0.05.svg"/>
-						</div>
-					</div>
-				</section>
-				
-				<section>
-					<h2>Loss function in N dimensions</h2>
-					<div class="two-img" >
-						<img style='width: 25%' src="img/J_extension_to_3d/start.png"/>
-						<img style='width: 25%' src="img/J_extension_to_3d/red_triangle_1.png"/>
-						<img style='width: 25%'  src="img/J_extension_to_3d/red_triangle_2.png"/>
-						<img style='width: 25%'  src="img/J_extension_to_3d/red_triangle_3.png"/>
-					</div>
-					
-					
-					<div class="fragment">
-						<script type="math/tex; mode=display">
-							L_s = V_1 + V_2 + ... + V_{N+1} + \color{blue}{ \beta\cdot V_s ^ {N+2}}
+							L_s =  \frac1N(V_1 + V_2 + ... + V_{N+1}) +{ \beta\cdot V_s ^ {N+2}}
 						</script>
 					</div>
 				</section>
@@ -431,7 +450,8 @@
 						<ul>
 							<li>Small bumps</li>
 							<li>Skipping peaks</li>
-							<li>Noise</li>
+							<!-- <li>Noise</li> -->
+							<!-- <li>sin(1/x)</li> -->
 						</ul>
 					</div>
 				</section>
@@ -441,11 +461,11 @@
 					<div class='two-img'>
 						<div class=''>
 							<img src='img/D_problems_distance/bump_adaptive_32.svg'/>
-							Length
+							Length as loss
 						</div>
 						<div class=''>
 							<img src='img/D_problems_distance/bump_curv_32.svg'/>
-							Curvature
+							Curvature as loss
 						</div>
 					</div>
 				</section>
@@ -456,17 +476,17 @@
 					<div class='two-img'>
 						<div class=''>
 							<img src='img/D_problems_distance/sin_adaptive_200.svg'/>
-							Length
+							Length as loss
 						</div>
 						<div class=''>
 							<img src='img/D_problems_distance/sin_curv_200.svg'/>
-							Curvature
+							Curvature as loss
 						</div>
 					</div>
 				</section>
 				
 				
-				<section>
+				<!-- <section>
 					<h2>Improvement on: noise</h2>
 					<div class='two-img'>
 						<div class=''>
@@ -478,9 +498,9 @@
 							Curvature
 						</div>
 					</div>
-				</section>
+				</section> -->
 				
-				<section>
+				<!-- <section>
 					<h2>Improvement on: sin(1/x)</h2>
 					<div class='two-img'>
 						<div class=''>
@@ -492,15 +512,19 @@
 							Curvature
 						</div>
 					</div>
-				</section>
+				</section> -->
 				
 				<section>
 					<h2>How good is it?</h2>
-					<script type="math/tex; mode=display">
-						\text{Err} = \int_a^b|f(x)-\tilde f(x)|\ \text{d}x
-					</script>
+					
 					
 					<img src='img/H_interpolation_error/error_multi_interval.png'/>
+					
+					<div class='fragment'>
+						<script type="math/tex; mode=display" >
+							\text{Err} = \int_a^b|f(x)-\tilde f(x)|\ \text{d}x
+						</script>
+					</div>
 				</section>
 				
 				
@@ -553,11 +577,12 @@
 				
 				<section>
 					<h2>Outline</h2>
-					<ul class='highlight-title'>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</li>
-						<li class=''>Prioritising curvature</li>
-						<li class=''>A multi-dimensional adaptive sampling algorithm and its application to <b>Fermi surfaces</b></li>
+					<div class='highlight-title'>A multi-dimensional adaptive sampling algorithm and its application to <b>Fermi surfaces</b></div>
+					<br/>
+					<ul>
+						<li>Band structures</li>
+						<li>Special loss function</li>
+						<li>Fermi surfaces</li>
 					</ul>
 				</section>
 				
@@ -589,6 +614,9 @@
 					<h2>Fermi surface</h2>
 					<img src="img/L_fermi_surface/fermi_gold.jpg"/><br/>
 					Fermi surface of gold
+					
+					
+					<small style='position: absolute; bottom: 0; right: 0; font-size: 0.3em;'>Image from T. Li &amp; W. Schroeder, 2007</small>
 				</section>
 				
 				
@@ -710,34 +738,28 @@
 				
 				
 				<section>
-					<h2>Adaptive sampling</h2>
+					<h2>Conclusion</h2>
 					<ul>
-						<li>More accurate plots</li>
+						<li>Smoother/more accurate plots</li>
 						<li>Higher resolution Fermi surface</li>
-						<li>Other meshes</li>
 					</ul>
 				</section>
-
-
+				
+				
 				<section>
-					<h2>Room for improvement</h2>
+					<h2>Future work</h2>
 					<ul>
 						<li>Faster implementation (C++ instead of Python)</li>
 						<li>Higher order interpolation</li>
 						<li>Anisotropic triangulations</li>
 					</ul>
-
+					
 				</section>
 				
 				
 				<section>
 					<h2>Check out adaptive</h2>
-					<ul>
-						<li><a href='https://github.com/python-adaptive/adaptive'>github.com/python-adaptive/adaptive</a></li>
-						<li>Try on <a href='https://mybinder.org/v2/gh/python-adaptive/adaptive/master?filepath=learner.ipynb'>Binder</a> </li>
-						<li>conda install -c conda-forge adaptive</li>
-						<li>pip install adaptive[notebook]</li>
-					</ul>
+					<a href='https://github.com/python-adaptive/adaptive'>github.com/python-adaptive/adaptive</a><br/>
 				</section>
 				
 				<section>
@@ -772,6 +794,11 @@
 						<img height="450" src='img/H_interpolation_error/2d_quadratic.png'/>
 						<img height="450" src='img/H_interpolation_error/err_2d_quadratic.svg'/>
 					</div>
+				</section>
+				
+				<section>
+					<h2>Bowyer Watson</h2>
+					<img height=500 src='img/Z_bowyer_watson/bowyer_watson.svg'/>
 				</section>
 				
 			</div>
