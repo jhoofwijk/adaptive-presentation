@@ -222,11 +222,6 @@
 				<section>
 					<h2>Outline</h2>
 					<div class='highlight-title'>A <b>multi-dimensional</b> adaptive sampling algorithm and its application to Fermi surfaces</div>
-					<br/>
-					<ul>
-						<li>Existing 2D implementation</li>
-						<li>New implementation</li>
-					</ul>
 				</section>
 				
 				<section>
@@ -258,7 +253,7 @@
 				</section> -->
 				
 				
-				<section>
+				<!-- <section>
 					<h2>Adaptive 2D</h2>
 					<div class='two-img'>
 						<div class='' style='margin: 0 20px'>
@@ -270,7 +265,7 @@
 							Adaptive
 						</div>
 					</div>
-				</section>
+				</section> -->
 				
 				<section>
 					<h2>Loss in N dimenions</h2>
@@ -282,7 +277,7 @@
 					<div class='two-img'>
 						<div class='' style='margin: 0 20px'>
 							<img src='img/C_adaptive_2d/learner2d.png'/>
-							Adaptive
+							Existing implementation
 						</div>
 						<div class='' style='margin: 0 20px'>
 							<img src='img/C_adaptive_2d/learnernd_no_curv.png'/>
@@ -297,10 +292,9 @@
 					<div class='highlight-title'>A multi-dimensional <b>adaptive sampling</b> algorithm and its application to Fermi surfaces</div>
 					<br/>
 					<ul>
-						<li>Problems with length as loss</li>
-						<li>New loss function</li>
-						<li>Problems solved?</li>
-						<li>Error comparison</li>
+						<li class='fragment'>Problems with length as loss</li>
+						<li class='fragment'>New loss function</li>
+						<li class='fragment'>Error comparison</li>
 					</ul>
 				</section>
 				
@@ -331,26 +325,27 @@
 				
 				<section>
 					<h2>Line simplification</h2>
-					Visvalingam-Whyatt algorithm
+					<p class='fragment'>
+						Visvalingam-Whyatt algorithm
+					</p>					
 					
-					<div style="position:relative; width:730px; height:280px; margin:0 auto;">
-						<img class="        " width="730" height="280" src="img/E_visvalingam_whyat/img_1.svg"  style="position:absolute;top:0;left:0;background-color: white" />
-						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_2.svg"  style="position:absolute;top:0;left:0;background-color: white" />
-						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_3.svg"  style="position:absolute;top:0;left:0;background-color: white" />
-						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_4.svg"  style="position:absolute;top:0;left:0;background-color: white" />
-						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_5.svg"  style="position:absolute;top:0;left:0;background-color: white" />
-						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_6.svg"  style="position:absolute;top:0;left:0;background-color: white" />
-						<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_2.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+					<div class='fragment'>
+						<div style="position:relative; width:730px; height:280px; margin:0 auto;">
+							<img class="        " width="730" height="280" src="img/E_visvalingam_whyat/img_1.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+							<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_2.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+							<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_3.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+							<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_4.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+							<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_5.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+							<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_6.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+							<img class="fragment" width="730" height="280" src="img/E_visvalingam_whyat/img_2.svg"  style="position:absolute;top:0;left:0;background-color: white" />
+						</div>
+						<small style='position: absolute; bottom: 0; right: 0; font-size: 0.3em;'>Modified images from M. Bostock (<a href='https://bost.ocks.org/mike/simplify/'>https://bost.ocks.org/mike/simplify/</a>)</small>
 					</div>
-					
-					
-					<small style='position: absolute; bottom: 0; right: 0; font-size: 0.3em;'>Modified images from M. Bostock (<a href='https://bost.ocks.org/mike/simplify/'>https://bost.ocks.org/mike/simplify/</a>)</small>
 				</section>
 				
 				
 				<section>
 					<h2>Loss function</h2>
-					"reversed Visvalingam-Whyatt algorithm"
 					
 					<img height='300' src="img/F_curvature_loss/triangle_loss.png"/>
 					
@@ -380,7 +375,7 @@
 				-->
 				
 				<section>
-					<h2>Exploration/Exploitation</h2>
+					<h2>Exploration term</h2>
 					<div style='display: flex'>
 						<div>
 							
@@ -401,26 +396,7 @@
 				</section>
 				
 				<section>
-					<h2>Loss function in N dimensions</h2>
-					<div class="two-img" >
-						<img class="        " style='width: 25%' src="img/J_extension_to_3d/start.png"/>
-						<img class="fragment" style='width: 25%' src="img/J_extension_to_3d/red_triangle_1.png"/>
-						<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_2.png"/>
-						<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_3.png"/>
-					</div>
-					
-					<div class="fragment">
-						<script type="math/tex; mode=display">
-							L_s =  \frac1N(V_1 + V_2 + ... + V_{N+1}) +{ \beta\cdot V_s ^ {N+2}}
-						</script>
-					</div>
-				</section>
-				
-				<section>
-					<h2>Exploration/exploitation</h2>
-					<!-- <script type="math/tex; mode=display">
-						L_i = \Delta x ^ 3 \cdot \left(|f''| + \beta\right)
-					</script> -->
+					<h2>Exploration term</h2>
 					<div style="position:relative; width:500px; margin:0 auto;">
 						<div style='position:absolute;top:0; background-color: white;'>
 							<img src="img/G_exploration_vs_exploit/curv_beta_0.0.svg"/>
@@ -443,16 +419,19 @@
 					</div>
 				</section>
 				
-				
 				<section>
-					<h2>Problems with length as loss</h2>
-					<div>
-						<ul>
-							<li>Small bumps</li>
-							<li>Skipping peaks</li>
-							<!-- <li>Noise</li> -->
-							<!-- <li>sin(1/x)</li> -->
-						</ul>
+					<h2>Loss function in N dimensions</h2>
+					<div class="two-img" >
+						<img class="        " style='width: 25%' src="img/J_extension_to_3d/start.png"/>
+						<img class="fragment" style='width: 25%' src="img/J_extension_to_3d/red_triangle_1.png"/>
+						<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_2.png"/>
+						<img class="fragment" style='width: 25%'  src="img/J_extension_to_3d/red_triangle_3.png"/>
+					</div>
+					
+					<div class="fragment">
+						<script type="math/tex; mode=display">
+							L_s =  \frac1N(V_1 + V_2 + ... + V_{N+1}) +{ \beta\cdot V_s ^ {N+2}}
+						</script>
 					</div>
 				</section>
 				
@@ -514,8 +493,8 @@
 					</div>
 				</section> -->
 				
-				<section>
-					<h2>How good is it?</h2>
+				<!-- <section>
+					<h2>Comparison</h2>
 					
 					
 					<img src='img/H_interpolation_error/error_multi_interval.png'/>
@@ -525,11 +504,11 @@
 							\text{Err} = \int_a^b|f(x)-\tilde f(x)|\ \text{d}x
 						</script>
 					</div>
-				</section>
+				</section> -->
 				
 				
 				<section>
-					<h2>How good is it?</h2>
+					<h2>Error comparison</h2>
 					Error reduced 2x
 					<div class='two-img'>
 						<img height="450" src='img/H_interpolation_error/tanh10x.svg'/>
@@ -538,7 +517,7 @@
 				</section>
 				
 				<section>
-					<h2>How good is it?</h2>
+					<h2>Error comparison</h2>
 					Error reduced 6x
 					<div class='two-img'>
 						<img height="450" src='img/H_interpolation_error/sin100x_times_gauss.svg'/>
@@ -547,7 +526,7 @@
 				</section>
 				
 				<section>
-					<h2>How good is it?</h2>
+					<h2>Error comparison</h2>
 					Error reduced 20x
 					<div class='two-img'>
 						<img height="450" src='img/H_interpolation_error/peaks.svg'/>
@@ -558,7 +537,7 @@
 				
 				
 				<section>
-					<h2>How good is it?</h2>
+					<h2>Error comparison</h2>
 					Error reduced 2x
 					<div class='two-img'>
 						<img height="450" src='img/H_interpolation_error/2d_tanh.png'/>
@@ -567,7 +546,7 @@
 				</section>
 				
 				<section>
-					<h2>How good is it?</h2>
+					<h2>Error comparison</h2>
 					Error reduced 1.5x
 					<div class='two-img'>
 						<img height="450" src='img/H_interpolation_error/2d_sin_times_gauss.png'/>
@@ -580,9 +559,9 @@
 					<div class='highlight-title'>A multi-dimensional adaptive sampling algorithm and its application to <b>Fermi surfaces</b></div>
 					<br/>
 					<ul>
-						<li>Band structures</li>
-						<li>Special loss function</li>
-						<li>Fermi surfaces</li>
+						<li class='fragment'>Band structures</li>
+						<li class='fragment'>Special loss function</li>
+						<li class='fragment'>Fermi surfaces</li>
 					</ul>
 				</section>
 				
@@ -601,11 +580,11 @@
 					<div class='two-img'>
 						<div class=''>
 							<img src='img/K_band_structure/band_structure_1d_fermi_0.svg'/>
-							Conductor
+							<p class='fragment'>Conductor</p>
 						</div>
 						<div class=''>
 							<img src='img/K_band_structure/band_structure_1d_fermi_high.svg'/>
-							Insulator
+							<p class='fragment'>Insulator</p>
 						</div>
 					</div>
 				</section>
@@ -616,17 +595,17 @@
 					Fermi surface of gold
 					
 					
-					<small style='position: absolute; bottom: 0; right: 0; font-size: 0.3em;'>Image from T. Li &amp; W. Schroeder, 2007</small>
+					<small style='position: absolute; bottom: 0; right: 0; font-size: 0.3em;'>Image from T. Li &amp; W. Schroeder (2007)</small>
 				</section>
 				
 				
 				<section>
 					<h2>Modified adaptive sampling</h2>
 					<script type="math/tex; mode=display">
-						L_{\text{surf}} = 
+						L_{\text{isosurf}} = 
 						\begin{cases}
-						1\cdot L_{\text{curv}} \quad\text{all points below or above Fermi level}\\
-						\gamma\cdot L_{\text{curv}} \quad\text{otherwise}; \gamma = 5
+						5\cdot L_{\text{curv}} \quad\text{simplex crosses Fermi level}\\
+						1\cdot L_{\text{curv}} \quad\text{otherwise}
 						\end{cases}
 					</script>
 				</section>
@@ -636,23 +615,17 @@
 					<h2>Modified adaptive sampling</h2>
 					<div class='two-img' style='text-align: center'>
 						<div>
-							<img height='440' style='width: initial' src="img/N_zoom_to_isosurf/adaptive_5.png"/><br/>
-							<script type="math/tex; mode=display">
-								\gamma = 5
-							</script>
+							<img src="img/N_zoom_to_isosurf/adaptive_5.png"/><br/>
 						</div>
 						<div class='fragment'>
-							<img height='440' style='width: initial' src="img/N_zoom_to_isosurf/adaptive_25.png"/><br/>
-							<script type="math/tex; mode=display" style='margin-top: -50px'>
-								\gamma = 25
-							</script>
+							<img src="img/N_zoom_to_isosurf/adaptive_25.png"/><br/>
 						</div>
 					</div>
 				</section>
 				
 				<section>
 					<h2>Fermi surface simple cubic</h2>
-					2.8x more triangles
+					<p class='fragment'>2.8x more triangles</p>
 					<div class='fermi-img' style='text-align: center'>
 						<img height=220 src="img/O_crystals_plus_fermi/cubic.png"/>
 						<div>
@@ -667,17 +640,34 @@
 					</div>
 				</section>
 				
+				
+				
 				<section>
-					<h2>Fermi surface BCC</h2>
-					1.3x more triangles
+					<h2>Fermi surface hexagonal</h2>
+					2.3x more triangles
 					<div class='fermi-img' style='text-align: center'>
-						<img height=220 src="img/O_crystals_plus_fermi/bcc.png"/>
+						<img height=220 src="img/O_crystals_plus_fermi/hex.png"/>
 						<div>
-							<img src="img/O_crystals_plus_fermi/bcc/iso_homogeneous.png"/><br/>
+							<img src="img/O_crystals_plus_fermi/hexagon/iso_homogeneous.png"/><br/>
 							Homogeneous
 						</div>
 						<div>
-							<img src="img/O_crystals_plus_fermi/bcc/iso_adaptive.png"/><br/>
+							<img src="img/O_crystals_plus_fermi/hexagon/iso_adaptive.png"/><br/>
+							Adaptive
+						</div>
+						
+					</div>
+				</section>
+				
+				<section>
+					<h2>Fermi surface simple cubic</h2>
+					<div class='fermi-img' style='text-align: center'>
+						<div>
+							<img src="img/O_crystals_plus_fermi/simple_cubic/mesh_homogeneous.png"/><br/>
+							Homogeneous
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/simple_cubic/mesh_adaptive.png"/><br/>
 							Adaptive
 						</div>
 						
@@ -697,71 +687,31 @@
 							<img src="img/O_crystals_plus_fermi/fcc/iso_adaptive.png"/><br/>
 							Adaptive
 						</div>
-						
 					</div>
 				</section>
-				
-				<section>
-					<h2>Fermi surface hexagonal</h2>
-					2.3x more triangles
-					<div class='fermi-img' style='text-align: center'>
-						<img height=220 src="img/O_crystals_plus_fermi/hex.png"/>
-						<div>
-							<img src="img/O_crystals_plus_fermi/hexagon/iso_homogeneous.png"/><br/>
-							Homogeneous
-						</div>
-						<div>
-							<img src="img/O_crystals_plus_fermi/hexagon/iso_adaptive.png"/><br/>
-							Adaptive
-						</div>
-						
-					</div>
-				</section>
-				
-				
-				<section>
-					<h2>Fermi surface simple cubic</h2>
-					<div class='fermi-img' style='text-align: center'>
-						<div>
-							<img src="img/O_crystals_plus_fermi/simple_cubic/mesh_homogeneous.png"/><br/>
-							Homogeneous
-						</div>
-						<div>
-							<img src="img/O_crystals_plus_fermi/simple_cubic/mesh_adaptive.png"/><br/>
-							Adaptive
-						</div>
-						
-					</div>
-				</section>
-				
-				
 				
 				
 				<section>
 					<h2>Conclusion</h2>
 					<ul>
-						<li>Smoother/more accurate plots</li>
-						<li>Higher resolution Fermi surface</li>
+						<li class='fragment'>Smoother/more accurate plots</li>
+						<li class='fragment'>Higher resolution Fermi surface</li>
 					</ul>
 				</section>
-				
 				
 				<section>
 					<h2>Future work</h2>
 					<ul>
-						<li>Faster implementation (C++ instead of Python)</li>
-						<li>Higher order interpolation</li>
-						<li>Anisotropic triangulations</li>
+						<li class='fragment'>Faster implementation (C++ instead of Python)</li>
+						<li class='fragment'>Higher order interpolation</li>
+						<li class='fragment'>Anisotropic triangulations</li>
 					</ul>
 					
+					<img class='fragment' height=300 src="img/X_anisotropic/paper.png" />
+					
+					<small style='position: absolute; bottom: 30px; right: 0; font-size: 0.3em;'>Image from Huang, Kamenski &amp; Lang (2010)</small>
 				</section>
-				
-				
-				<section>
-					<h2>Check out adaptive</h2>
-					<a href='https://github.com/python-adaptive/adaptive'>github.com/python-adaptive/adaptive</a><br/>
-				</section>
-				
+								
 				<section>
 					<h4>A multi-dimensional adaptive sampling algorithm and its application to Fermi surfaces</h4>
 					<p>
@@ -780,19 +730,41 @@
 							Dr. ir. Wolter Groenevelt 
 						</small>			
 					</div>
+
+					<div class='fragment'>
+						<h2>Check out adaptive</h2>
+						<a href='https://github.com/python-adaptive/adaptive'>github.com/python-adaptive/adaptive</a><br/>
+					</div>
 				</section>
-				
 				
 				<section>
 					<h2>Bonus slides</h2>
 				</section>
 				
 				<section>
-					<h2>How good is it?</h2>
+					<h2>Error comparison</h2>
 					Error increased 1.14x
 					<div class='two-img'>
 						<img height="450" src='img/H_interpolation_error/2d_quadratic.png'/>
 						<img height="450" src='img/H_interpolation_error/err_2d_quadratic.svg'/>
+					</div>
+				</section>
+				
+				
+				<section>
+					<h2>Fermi surface BCC</h2>
+					1.3x more triangles
+					<div class='fermi-img' style='text-align: center'>
+						<img height=220 src="img/O_crystals_plus_fermi/bcc.png"/>
+						<div>
+							<img src="img/O_crystals_plus_fermi/bcc/iso_homogeneous.png"/><br/>
+							Homogeneous
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/bcc/iso_adaptive.png"/><br/>
+							Adaptive
+						</div>
+						
 					</div>
 				</section>
 				
@@ -822,6 +794,8 @@
 					slideNumber: 'c/t',
 					controls: false,
 					hash: true,
+					pdfSeparateFragments: false,
+					pdfMaxPagesPerSlide: 1,
 				});
 			</script>
 		</body>
