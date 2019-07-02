@@ -82,6 +82,32 @@
 			width: 100%;
 			margin: 0 0;
 		}
+
+		.mesh-img {
+			position: relative;
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		.mesh-img div {
+			flex-basis: 1px;
+			flex-grow: 1;
+			box-sizing: border-box;
+			display: inline-block;
+		}
+		
+		.mesh-img img {
+			width: initial;
+			box-sizing: border-box;
+			display: inline-block;
+		}
+		
+		.mesh-img div img {
+			width: 100%;
+			margin: 0 0;
+		}
 		
 	</style>
 	
@@ -375,7 +401,7 @@
 				<section>
 					<h2>Loss function</h2>
 					
-					<img height='300' src="img/F_curvature_loss/triangle_loss.png"/>
+					<img height='300' src="img/F_curvature_loss/triangle_loss.svg"/>
 					
 					<div class="">
 						<script type="math/tex; mode=display">
@@ -442,7 +468,7 @@
 					
 					<div class="fragment">
 						<script type="math/tex; mode=display">
-							L_s =  \frac1{N+1}(V_1 + V_2 + ... + V_{N+1}) +{ \beta\cdot A_{\text{base}} ^ {2+N}}
+							L_s =  \frac1{N+1}(\color{red}{V_1} + \color{green}{V_2} + ... + \color{blue}{V_{N+1}}) +{ \beta\cdot (\color{purple}{A_{\text{base}}}) ^ {(2+N)/N}}
 						</script>
 					</div>
 				</section>
@@ -505,18 +531,18 @@
 					</div>
 				</section> -->
 				
-				<!-- <section>
+				<section>
 					<h2>Comparison</h2>
 					
 					
-					<img src='img/H_interpolation_error/error_multi_interval.png'/>
+					<img src='img/H_interpolation_error/error_multi_interval_2.png'/>
 					
 					<div class='fragment'>
 						<script type="math/tex; mode=display" >
 							\text{Err} = \int_a^b|f(x)-\tilde f(x)|\ \text{d}x
 						</script>
 					</div>
-				</section> -->
+				</section>
 				
 				
 				<!-- <section>
@@ -550,7 +576,7 @@
 				
 				<section>
 					<h2>Error comparison</h2>
-					Error reduced 2x
+					Error reduced 6x
 					<div class='two-img'>
 						<img height="400" style='width: initial' src='img/C_adaptive_2d/learnernd_curv.png'/>
 						<img height="450" src='img/H_interpolation_error/error_ring_correct.svg'/>
@@ -586,21 +612,26 @@
 					<img src='img/K_band_structure/band_structure_1d_fermi_0.svg'/>
 				</section>
 				
+				<section>
+					<h2>Fermi level</h2>
+					1D crystal<br/>
+					<img src='img/K_band_structure/fermi_surface_1d.svg'/>
+				</section>
 				
-				
-				
+					
 				<section>
 					<h2>Modified adaptive sampling</h2>
 					<script type="math/tex; mode=display">
-						L_{\text{isosurf}} = 
+						L_{\text{fermi}} = 
 						\begin{cases}
-						5\cdot L_{\text{curv}} \quad\text{simplex crosses Fermi level}\\
-						1\cdot L_{\text{curv}} \quad\text{otherwise}
+						\alpha\cdot L_{\text{old}} \quad\text{simplex crosses Fermi level;}\quad\alpha>1\\
+						1\cdot L_{\text{old}} \quad\text{otherwise}
 						\end{cases}
 					</script>
 					
 					
-					<img src="img/N_zoom_to_isosurf/adaptive_5.png" height="400" class='fragment'/>
+					<img src="img/N_zoom_to_isosurf/isosurf.png" height="400" class='fragment'/>
+					<img src="img/N_zoom_to_isosurf/isosurf_zoom.png" height="400" class='fragment'/>
 				</section>
 				
 				
@@ -608,7 +639,6 @@
 				
 				<section>
 					<h2>Fermi surface simple cubic</h2>
-					<p class='fragment'>2.8x more triangles</p>
 					<div class='fermi-img' style='text-align: center'>
 						<img height=220 src="img/O_crystals_plus_fermi/cubic.png"/>
 						<div>
@@ -625,7 +655,8 @@
 				
 				<section>
 					<h2>Fermi surface simple cubic</h2>
-					<div class='fermi-img' style='text-align: center'>
+					2.8x more triangles
+					<div class='mesh-img' style='text-align: center'>
 						<div>
 							<img src="img/O_crystals_plus_fermi/simple_cubic/mesh_homogeneous.png"/><br/>
 							Homogeneous
@@ -634,13 +665,11 @@
 							<img src="img/O_crystals_plus_fermi/simple_cubic/mesh_adaptive.png"/><br/>
 							Adaptive
 						</div>
-						
 					</div>
 				</section>
 				
 				<section>
 					<h2>Fermi surface FCC</h2>
-					1.9x more triangles
 					<div class='fermi-img' style='text-align: center'>
 						<img height=220 src="img/O_crystals_plus_fermi/fcc.png"/>
 						<div>
@@ -653,10 +682,24 @@
 						</div>
 					</div>
 				</section>
+
+				<section>
+					<h2>Fermi surface FCC</h2>
+					1.9x more triangles
+					<div class='mesh-img' style='text-align: center'>
+						<div>
+							<img src="img/O_crystals_plus_fermi/fcc/mesh_homogeneous.png"/><br/>
+							Homogeneous
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/fcc/mesh_adaptive.png"/><br/>
+							Adaptive
+						</div>
+					</div>
+				</section>
 				
 				<section>
 					<h2>Fermi surface hexagonal</h2>
-					2.3x more triangles
 					<div class='fermi-img' style='text-align: center'>
 						<img height=220 src="img/O_crystals_plus_fermi/hex.png"/>
 						<div>
@@ -670,7 +713,22 @@
 						
 					</div>
 				</section>
-				
+
+				<section>
+					<h2>Fermi surface Hexagonal</h2>
+					2.3x more triangles
+					<div class='mesh-img' style='text-align: center'>
+						<div>
+							<img src="img/O_crystals_plus_fermi/hexagon/mesh_homogeneous.png"/><br/>
+							Homogeneous
+						</div>
+						<div>
+							<img src="img/O_crystals_plus_fermi/hexagon/mesh_adaptive.png"/><br/>
+							Adaptive
+						</div>
+					</div>
+				</section>
+
 				<section>
 					<h2>Conclusion</h2>
 					<ul>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="210" version="1.1" width="430">
+    <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphal 2.2.0</desc>
+    <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <rect x="0" y="0" width="4000" height="4000" rx="0" ry="0" fill="#ffffff" stroke="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="#ff0000" stroke="#ff0000" d="M120,126.6L180,162.6L240,155.4Z" fill-opacity="0.5" stroke-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5; stroke-opacity: 0;" />
+    <path fill="#0000ff" stroke="#0000ff" d="M180,162.6L240,155.4L300,105Z" fill-opacity="0.5" stroke-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5; stroke-opacity: 0;" />
+    <circle cx="120" cy="126.6" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="180" cy="162.6" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="240" cy="155.4" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="300" cy="105" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M60,47.39999999999999L120,126.6" stroke-dasharray="4,3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M120,126.6L180,162.6" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M180,162.6L240,155.4" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M240,155.4L300,105" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M300,105L360,11.400000000000006" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M122,180L178,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M122,175L122,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M178,175L178,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M182,180L238,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M182,175L182,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M238,175L238,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M242,180L298,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M242,175L242,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M298,175L298,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <rect x="0" y="0" width="4000" height="4000" rx="0" ry="0" fill="#ffffff" stroke="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="#ff0000" stroke="#ff0000" d="M120,126.6L180,162.6L240,155.4Z" fill-opacity="0.5" stroke-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5; stroke-opacity: 0;" />
+    <path fill="#0000ff" stroke="#0000ff" d="M180,162.6L240,155.4L300,105Z" fill-opacity="0.5" stroke-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5; stroke-opacity: 0;" />
+    <circle cx="120" cy="126.6" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="180" cy="162.6" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="240" cy="155.4" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="300" cy="105" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M60,47.39999999999999L120,126.6" stroke-dasharray="4,3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M120,126.6L180,162.6" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M180,162.6L240,155.4" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M240,155.4L300,105" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M300,105L360,11.400000000000006" stroke-dasharray="4,3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M122,180L178,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M122,175L122,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M178,175L178,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M182,180L238,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M182,175L182,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M238,175L238,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M242,180L298,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M242,175L242,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M298,175L298,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <rect x="0" y="0" width="4000" height="4000" rx="0" ry="0" fill="#ffffff" stroke="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="#ff0000" stroke="#ff0000" d="M120,126.6L180,162.6L240,155.4Z" fill-opacity="0.5" stroke-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5; stroke-opacity: 0;" />
+    <path fill="#0000ff" stroke="#0000ff" d="M180,162.6L240,155.4L300,105Z" fill-opacity="0.5" stroke-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5; stroke-opacity: 0;" />
+    <circle cx="120" cy="126.6" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="180" cy="162.6" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="240" cy="155.4" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <circle cx="300" cy="105" r="4" fill="#000000" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M60,47.39999999999999L120,126.6" stroke-dasharray="4,3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M120,126.6L180,162.6" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M180,162.6L240,155.4" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M240,155.4L300,105" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <path fill="none" stroke="#000000" d="M300,105L360,11.400000000000006" stroke-dasharray="4,3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" />
+    <!-- <path fill="none" stroke="#000000" d="M122,180L178,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <path fill="none" stroke="#000000" d="M122,175L122,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <path fill="none" stroke="#000000" d="M178,175L178,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <path fill="none" stroke="#000000" d="M182,180L238,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <path fill="none" stroke="#000000" d="M182,175L182,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <path fill="none" stroke="#000000" d="M238,175L238,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <path fill="none" stroke="#000000" d="M242,180L298,180" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <path fill="none" stroke="#000000" d="M242,175L242,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <path fill="none" stroke="#000000" d="M298,175L298,185" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" /> -->
+    <!-- <text x="150" y="190" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="17px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 17px;">
+        <tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">a</tspan>
+    </text> -->
+    <!-- <text x="210" y="190" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="17px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 17px;">
+        <tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan>
+    </text> -->
+    <!-- <text x="270" y="190" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="17px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 17px;">
+        <tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">c</tspan>
+    </text> -->
+</svg>
